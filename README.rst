@@ -4,6 +4,9 @@
 .. image:: https://codeclimate.com/github/python-security/pyt/badges/coverage.svg
     :target: https://codeclimate.com/github/python-security/pyt/coverage
 
+.. image:: https://readthedocs.org/projects/pyt/badge/?version=latest
+    :target: http://pyt.readthedocs.io/en/latest/?badge=latest
+
 Python Taint
 ============
 
