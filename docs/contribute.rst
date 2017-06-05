@@ -7,11 +7,10 @@ You are here to help on pyt? Awesome, feel welcome and read the
 following sections in order to know what and how to work on something. If you
 get stuck at any point you can create a `ticket on GitHub`_.
 
-All members of our community are expected to follow our :doc:`/code-of-conduct`.
 Please make sure you are welcoming and friendly in all of our spaces.
 
 .. _#readthedocs: irc://irc.freenode.net/readthedocs
-.. _ticket on GitHub: https://github.com/rtfd/readthedocs.org/issues
+.. _ticket on GitHub: https://github.com/python-security/pyt/issues
 
 Contributing to development
 ---------------------------
