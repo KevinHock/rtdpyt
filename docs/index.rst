@@ -49,10 +49,3 @@ The main documentation for the tool is organized into a few sections:
    docs
    architecture
    details
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
