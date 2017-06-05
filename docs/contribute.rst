@@ -1,9 +1,9 @@
-.. _contributing-to-read-the-docs:
+.. _contributing-to-pyt:
 
-Contributing to Read the Docs
+Contributing to pyt
 =============================
 
-You are here to help on Read the Docs? Awesome, feel welcome and read the
+You are here to help on pyt? Awesome, feel welcome and read the
 following sections in order to know what and how to work on something. If you
 get stuck at any point you can create a `ticket on GitHub`_.
 
@@ -16,9 +16,9 @@ Please make sure you are welcoming and friendly in all of our spaces.
 Contributing to development
 ---------------------------
 
-If you want to deep dive and help out with development on Read the Docs, then
+If you want to deep dive and help out with development on pyt, then
 first get the project installed locally according to the
-:ref:`Installation Guide <installing-read-the-docs>`. After that is done we
+:ref:`Installation Guide <installing-pyt>`. After that is done we
 suggest you have a look at tickets in our issue tracker that are labelled `Good
 First Bug`_. These are meant to be a great way to get a smooth start and
 won't put you in front of the most complex parts of the system.
@@ -72,7 +72,7 @@ label. The reported issue …
       If the described issue was already fixed, then explain and instruct to
       re-trigger the build.
     - *Provide way to upload arbitrary HTML files*:
-      It was already decided that Read the Docs is not a dull hosting platform
+      It was already decided that pyt is not a dull hosting platform
       for HTML. So explain this and close the ticket.
 
 .. _triage-not-enough-information:
@@ -94,7 +94,7 @@ label. The reported issue …
 
 … is a valid enhancement proposal
     If the ticket contains an enhancement proposal that aligns with the goals
-    of Read the Docs, then add the label **Enhancement**. If the proposal
+    of pyt, then add the label **Enhancement**. If the proposal
     seems valid but requires further discussion between core contributors
     because there might be different possibilities on how to implement the
     enhancement, then also add the label **Needed: design decision**.
@@ -127,7 +127,7 @@ label. The reported issue …
 .. _triage-support-tickets:
 
 … is a question and needs answering:
-    If the ticket contains a question about the Read the Docs platform or the
+    If the ticket contains a question about the pyt platform or the
     code, then add the label **Support**.
 
     Examples:
@@ -162,7 +162,7 @@ few more at hand to further categorize issues.
 
 *Community Effort*
     There are many valuable ideas in the issue tracker for future enhancements
-    of Read the Docs. Unfortunately too many for the core developers to handle
+    of pyt. Unfortunately too many for the core developers to handle
     all of them. Therefore we assign the *Community Effort* label on all the
     issues that we see as valid for the project but that we currently do not
     have the resources to work on. We encourage community members to work
@@ -183,7 +183,7 @@ few more at hand to further categorize issues.
     idea. Those tickets related to one feature should also be grouped by a
     `milestone`_.
 
-.. _milestone: https://github.com/rtfd/readthedocs.org/milestones
+.. _milestone: https://github.com/python-security/pyt/milestones
 
 For a full list of available labels and their meanings, see
 :ref:`issue-label-overview`.
@@ -212,10 +212,3 @@ Here is a list of links for contributors that look for work:
   <https://github.com/rtfd/readthedocs.org/issues?q=is:open+is:issue+label:"Needed:+design+decision">`_:
   Project leaders must take actions on these tickets. Otherwise no other
   contributor can go forward on them.
-
-Helping on translations
------------------------
-
-If you wish to contribute translations, please do so on `Transifex`_.
-
-.. _Transifex: https://www.transifex.com/projects/p/readthedocs/
