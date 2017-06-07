@@ -1,5 +1,6 @@
-The maturity of pyt
+Maturity of PyT
 ==========================================
 
-It is important to state that pyt is still a very young, immature project.
-Nobody runs pyt on their production code at this point in time.
+It is important to state that PyT is still a very young, immature project.
+As far as we know,
+nobody runs PyT on their production code at this point in time.

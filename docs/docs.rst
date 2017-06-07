@@ -2,7 +2,7 @@ Building and Contributing to Documentation
 ==========================================
 
 As one might expect,
-the documentation for pyt is built using Sphinx and hosted on Read the Docs.
+the documentation for PyT is built using Sphinx and hosted on Read the Docs.
 The docs are kept in the ``docs/`` directory at the top of the source tree.
 
 You can build the docs by installing ``Sphinx`` and running::

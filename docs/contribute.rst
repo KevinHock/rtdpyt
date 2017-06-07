@@ -1,25 +1,26 @@
 .. _contributing-to-pyt:
 
-Contributing to pyt
+Contributing to PyT
 =============================
 
-You are here to help on pyt? Awesome, feel welcome and read the
+You are here to help on PyT? Awesome, feel welcome and read the
 following sections in order to know what and how to work on something. If you
 get stuck at any point you can create a `ticket on GitHub`_.
 
+Join our slack group: https://pyt-dev.slack.com/ - to ask for an invite, email mr.thalmann@gmail.com
+
 Please make sure you are welcoming and friendly in all of our spaces.
 
-.. _#readthedocs: irc://irc.freenode.net/readthedocs
 .. _ticket on GitHub: https://github.com/python-security/pyt/issues
 
 Contributing to development
 ---------------------------
 
-If you want to deep dive and help out with development on pyt, then
+If you want to deep dive and help out with development on PyT, then
 first get the project installed locally according to the
 :ref:`Installation Guide <installing-pyt>`. After that is done we
 suggest you have a look at tickets in our issue tracker that are labelled `Good
-First Bug`_. These are meant to be a great way to get a smooth start and
+First Issue`_. These are meant to be a great way to get a smooth start and
 won't put you in front of the most complex parts of the system.
 
 If you are up to more challenging tasks with a bigger scope, then there are a
@@ -33,8 +34,21 @@ label. Those tickets are meant to be standalone and can be worked on ad-hoc.
 When contributing code, then please follow the standard Contribution
 Guidelines set forth at `contribution-guide.org`_.
 
+Procedure for adding new features:
+
+* Pitch idea in slack
+* Issue created in Github
+* Develop the feature in a separate feature-branch
+  * Feature branch names should start with the issues number and is allowed to contain letters and underscores, for instance: 12_add_new_awesome_feature
+  * Remember to write unit tests and docstrings for your code, and if necessary documentation
+* Announce finished feature as pull request
+* Pull request reviewed by at least 1
+* Merge to development branch when ready
+* Merge into master when we all agree
+
+
 .. _Feature Overview: https://github.com/rtfd/readthedocs.org/issues?direction=desc&labels=Feature+Overview&page=1&sort=updated&state=open
-.. _Good First Bug: https://github.com/rtfd/readthedocs.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Bug%22
+.. _Good First Issue: https://github.com/rtfd/readthedocs.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Issue%22
 .. _Sprintable: https://github.com/rtfd/readthedocs.org/issues?q=is%3Aopen+is%3Aissue+label%3ASprintable
 .. _contribution-guide.org: http://www.contribution-guide.org/#submitting-bugs
 
@@ -71,7 +85,7 @@ label. The reported issue …
       If the described issue was already fixed, then explain and instruct to
       re-trigger the build.
     - *Provide way to upload arbitrary HTML files*:
-      It was already decided that pyt is not a dull hosting platform
+      It was already decided that PyT is not a dull hosting platform
       for HTML. So explain this and close the ticket.
 
 .. _triage-not-enough-information:
@@ -93,7 +107,7 @@ label. The reported issue …
 
 … is a valid enhancement proposal
     If the ticket contains an enhancement proposal that aligns with the goals
-    of pyt, then add the label **Enhancement**. If the proposal
+    of PyT, then add the label **Enhancement**. If the proposal
     seems valid but requires further discussion between core contributors
     because there might be different possibilities on how to implement the
     enhancement, then also add the label **Needed: design decision**.
@@ -126,7 +140,7 @@ label. The reported issue …
 .. _triage-support-tickets:
 
 … is a question and needs answering:
-    If the ticket contains a question about the pyt platform or the
+    If the ticket contains a question about the PyT platform or the
     code, then add the label **Support**.
 
     Examples:
@@ -161,7 +175,7 @@ few more at hand to further categorize issues.
 
 *Community Effort*
     There are many valuable ideas in the issue tracker for future enhancements
-    of pyt. Unfortunately too many for the core developers to handle
+    of PyT. Unfortunately too many for the core developers to handle
     all of them. Therefore we assign the *Community Effort* label on all the
     issues that we see as valid for the project but that we currently do not
     have the resources to work on. We encourage community members to work

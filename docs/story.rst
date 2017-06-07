@@ -1,12 +1,10 @@
-The Story of pyt
+The Story of PyT
 ==========================
 
-pyt was created by Bruno Thalmann and Stefan Micheelsen, as their Master's `Thesis`_.
+PyT was created by Bruno and Stefan, as their Master's `Thesis`_.
 
+Almost a year later, Kevin was talking about JunkHacker with a friend, the friend asked for resources for learning more about taint tracking, found PyT in the process, gave up on JunkHacker and has been contributing since.
+
+A couple of months after that Collin released focuson, we then started to publicize PyT to the Python and InfoSec communities.
 
 .. _Thesis: http://projekter.aau.dk/projekter/files/239563289/final.pdf
-
-junkhacker..
-focuson..
-now.
-

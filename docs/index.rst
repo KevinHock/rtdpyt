@@ -1,4 +1,4 @@
-Welcome to pyt's documentation!
+Welcome to PyT's documentation!
 ===============================
 
 `pyt`_ is static analysis tool for detecting security vulnerabilities in Python3 web applications.
@@ -29,7 +29,7 @@ The main documentation for the tool is organized into a few sections:
 
 .. toctree::
    :maxdepth: 2
-   :caption: About pyt
+   :caption: About PyT
 
    story
    maturity
