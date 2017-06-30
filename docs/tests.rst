@@ -1,10 +1,10 @@
 Testing
 =======
 
-Before contributing to Pyt, make sure your patch passes our test suite
+Before contributing to PyT, make sure your patch passes our test suite
 and your code style passes our code linting suite.
 
-Pyt uses `Tox`_ to execute testing and linting procedures. Tox is the
+PyT uses `Tox`_ to execute testing and linting procedures. Tox is the
 only dependency you need to run linting or our test suite, the remainder of our
 requirements will be installed by Tox into environment specific virtualenv
 paths. Before testing, make sure you have Tox installed::
@@ -43,6 +43,6 @@ target a single environment to limit the test suite::
 Continuous Integration
 ----------------------
 
-The Pyt test suite is exercised by Travis CI on every push to our repo at
+The PyT test suite is exercised by Travis CI on every push to our repo at
 GitHub. You can check out the current build status:
 https://travis-ci.org/python-security/pyt
