@@ -1,5 +1,4 @@
 Architecture
 ============
 
-TODO
-
+.. image:: img/overview.png

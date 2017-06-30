@@ -63,7 +63,7 @@ Related Papers
 
 * `Static Detection of Second Order Vulnerabilities in Web Applications`_
 
-* `Finding Security Bugs in Web Applications using a Catalog of Access Control Patterns`
+* `Finding Security Bugs in Web Applications using a Catalog of Access Control Patterns`_
 
 * `Derailer Interactive Security Analysis for Web Applications`_
 
