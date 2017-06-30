@@ -5,10 +5,12 @@ Related Projects
 	Bandit was a tool made by a few people at OpenStack with the same purpose of PyT in mind, the main difference is that Bandit doesn't track the flow of data and PyT does, so it's closer to a grep ish pre-commit hook to e.g. ban urllib2 and open etc. and suggest Advocate and a secure open wrapper instead. The sinks, formatters and UI are the strong points.
 
 .. _junkhacker:
+
 * JunkHacker
 	JunkHacker was written by `Kevin Hock`_ and had an incredibly bad design, it analyzed Python bytecode using `equip`_ and tracked taint by depth-first searching through basic block's via a bytecode interpreter heavily adopted from `Byterun`_. It dealth with path-explosion via a crazy `buddy system`_ and being that many byecode instructions e.g. exceptions do not work on the basic block level, work arounds were gruesome. The `buddy system`_ worked by marking each node that diverged with the node that it's children converged, and keeping a stack of buddies on in the code that performed DFS. This was both less efficient than unioning predecessors like PyT and more complicated. It is not open-source because of how ugly it is.
 
 .. _Focuson:
+
 * `Focuson`_
 	focuson was written by `Collin Greene`_ of Uber, similar to PyT it uses the `ast module`_ but unlike PyT it tracks dataflow using path-insensitive backwards slicing. Path explosion is not a problem because it is path-insensitive, but that causes it to have more false-positives than PyT.
 
@@ -69,5 +71,6 @@ Related Papers
 
 .. _Alias Analysis for Optimization of Dynamic Languages: http://www3.cs.stonybrook.edu/~liu/papers/Alias-DLS10.pdf
 .. _Static Detection of Second Order Vulnerabilities in Web Applications: https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-dahse.pdf
+.. _Finding Security Bugs in Web Applications using a Catalog of Access Control Patterns: https://dspace.mit.edu/openaccess-disseminate/1721.1/102281
 .. _Derailer Interactive Security Analysis for Web Applications: http://people.eecs.berkeley.edu/~jnear/papers/ase14.pdf
 
