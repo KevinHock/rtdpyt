@@ -5,9 +5,9 @@ Feature Roadmap of PyT
 
 * Nested Function Calls
 
-* 3.5 and 3.6 CFG Features
-
 * Reduce Pagination False Positives
+
+* 3.5 and 3.6 CFG Features
 
 * Run it on many projects, enumerate all the problems and fix some of them
 
@@ -16,4 +16,3 @@ Feature Roadmap of PyT
 * Add a tox.ini
 
 * PyPI Packaging
-
