@@ -1,4 +1,4 @@
-PyT Development Team
+Development Team
 ==================
 
 Members

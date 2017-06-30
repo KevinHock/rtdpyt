@@ -1,6 +1,6 @@
 .. _contributing-to-pyt:
 
-Contributing to PyT
+Contributing
 =============================
 
 You are here to help on PyT? Awesome, feel welcome and read the

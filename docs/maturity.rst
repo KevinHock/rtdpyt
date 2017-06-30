@@ -1,4 +1,4 @@
-Maturity of PyT
+Maturity
 ==========================================
 
 It is important to state that PyT is still a very young, immature project.

@@ -1,4 +1,4 @@
-The Story of PyT
+The Story
 ==========================
 
 PyT was created by Bruno and Stefan, as their Master's `Thesis`_.

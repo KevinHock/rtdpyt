@@ -1,4 +1,4 @@
-Feature Roadmap of PyT
+Feature Roadmap
 ==========================================
 
 * Documentation
