@@ -4,7 +4,7 @@ Getting Started
 This document will show you how to get started using PyT.
 
 Install
-=======
+--------------------------------------
 
        1. git clone https://github.com/python-security/pyt.git
        2. python setup.py install
@@ -12,7 +12,7 @@ Install
 
 
 Usage from Source
-=================
+--------------------------------------
 
 Using it like a user ``python -m pyt -f example/vulnerable_code/XSS_call.py save -du``
 
