@@ -14,7 +14,7 @@ Related Projects
 	Written by `Collin Greene`_ of Uber, similar to PyT it uses the `ast module`_ but unlike PyT it tracks dataflow using path-insensitive backwards slicing. Path explosion is not a problem because it is path-insensitive, but that causes it to have more false-positives than PyT.
 
 * `PyExZ3`_
-	A dynamic symbolic execution framework for Python, potentially useful for taint tracking if it can `solve string constraints`_, which there is experimental support for in a `fork`_. "A novel aspect of the rewrite is to rely solely on Python's operator overloading to accomplish all the interception needed for symbolic execution." `Joseph Near`_ did this before them, but interesting nevertheless.
+	A dynamic symbolic execution framework for Python, potentially useful for taint tracking if it can `solve string constraints`_, which there is experimental support for in a `fork`_. "A novel aspect of the rewrite is to rely solely on Python's operator overloading to accomplish all the interception needed for symbolic execution." `Joseph Near`_ did this before them, but it is interesting work nevertheless.
 
 * `DARLAB Work`_
 	Has great `alias analysis work`_, by `Michael Gorbovitski`_ et al. It would be quite performance intensive to add to a security tool and may or may not be that helpful for reducing false positives, but is quite impressive work regardless.
@@ -83,7 +83,7 @@ Related Papers
 * `Derailer Interactive Security Analysis for Web Applications`_
 
 * `Practical Static Analysis of JavaScript Applications in the Presence of Frameworks and Libraries`_
-	There are 3 ways of handling blackbox calls between source and sink, to basically answer the questions a summary does, e.g. if argument A is tainted, does this call return a tainted value? This can be dealth with via (1) hard-coded mapping, (2) pip install, see if Python code or (3) this paper. I suspect long-term, some combination of 1 and 2 will be done with PyT. If we just ask the user, "Hey, does this call propagate taint?" and we remember the answer, it would be easy enough for the user to use the tool.
+	There are 3 ways of handling blackbox calls between source and sink, to basically answer the questions that a proper summary does, e.g. if argument A is tainted, does this call return a tainted value? This can be dealth with via (1) hard-coded mapping, (2) pip install, see if Python code or, (3) possibly this paper. I suspect long-term, some combination of 1 and 2 will be done with PyT. If we just ask the user, "Hey, does this call propagate taint?" and we remember the answer, it would be easy enough for the user to use the tool.
 
 .. _Schwarzbach static analysis notes: http://lara.epfl.ch/w/_media/sav08:schwartzbach.pdf
 .. _Engineering a Compiler: https://www.amazon.com/Engineering-Compiler-Second-Keith-Cooper/dp/012088478X
