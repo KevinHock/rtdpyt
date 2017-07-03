@@ -21,7 +21,7 @@ This is by far the easiest step, as it is done for us by the `ast`_ module, the 
 .. code-block:: python
 	ast.parse(f.read())
 
-on a file. The result is a tree of objects whose classes all inherit from `ast.AST`_.
+on a file. The result is a tree of objects whose classes all inherit from `ast\.AST`_.
 
 .. _ast: https://docs.python.org/3/library/ast.html
 .. _ast_helper\.py: https://github.com/python-security/pyt/blob/master/pyt/ast_helper.py

@@ -68,7 +68,7 @@ Related Projects
 Related Papers
 ---------------------------
 
-* `Schwarzbach static analysis notes`_ The PyT thesis is heavily influenced by these notes, they're a pretty good resource for learning dataflow analysis. Other good resources include `Engineering a Compiler`_, `Advanced Compiler Design and Implementation`_ and `Data Flow Analysis Theory and Practice`_.
+* `Schwarzbach static analysis notes`_ The PyT thesis is heavily influenced by these notes, they're a pretty good resource for learning dataflow analysis. Other good resources include `Engineering a Compiler`_, `Advanced Compiler Design and Implementation`_ and `Data Flow Analysis\: Theory and Practice`_.
 
 * `Alias Analysis for Optimization of Dynamic Languages`_
 
@@ -88,7 +88,7 @@ Related Papers
 .. _Schwarzbach static analysis notes: http://lara.epfl.ch/w/_media/sav08:schwartzbach.pdf
 .. _Engineering a Compiler: https://www.amazon.com/Engineering-Compiler-Second-Keith-Cooper/dp/012088478X
 .. _Advanced Compiler Design and Implementation: https://www.amazon.com/Advanced-Compiler-Design-Implementation-Muchnick/dp/1558603204
-.. _Data Flow Analysis Theory and Practice: https://www.amazon.com/Data-Flow-Analysis-Theory-Practice/dp/0849328802
+.. _Data Flow Analysis\: Theory and Practice: https://www.amazon.com/Data-Flow-Analysis-Theory-Practice/dp/0849328802
 
 .. _Alias Analysis for Optimization of Dynamic Languages: http://www3.cs.stonybrook.edu/~liu/papers/Alias-DLS10.pdf
 .. _Static Detection of Second Order Vulnerabilities in Web Applications: https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-dahse.pdf
