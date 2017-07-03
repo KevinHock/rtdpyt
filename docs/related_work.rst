@@ -1,6 +1,3 @@
-Related Work
-=============================
-
 Related Projects
 ---------------------------
 
@@ -68,16 +65,30 @@ Related Projects
 Related Papers
 ---------------------------
 
+* `Schwarzbach static analysis notes`_ The PyT thesis is heavily influenced by these notes, they're a pretty good resource for learning dataflow analysis. Other good resources include `Engineering a Compiler`_, `Advanced Compiler Design and Implementation`_ and `Data Flow Analysis Theory and Practice`_.
+
 * `Alias Analysis for Optimization of Dynamic Languages`_
 
 * `Static Detection of Second Order Vulnerabilities in Web Applications`_
+	A simple intuitive idea, but complex to implement. Unlike PyT they use summaries instead of inlining, summaries are sort of required to implement the idea, unless you wrote results somewhere and ran the tool again with those results in a dirty hack.
+	The main hard-parts with implementing this idea with PyT will be (1) re-writing to use summaries, (2) writing code that deals with this part of the paper "SQL has different syntactical forms of writing data to a table. Listing 1 shows three different ways to perform the same query". Aside from the examples given in the paper, some other examples of multi-step exploits are as follows. Tracking from bad RNG to store in location A to HTTP response, then seeing where a taint value is checked against location A.
 
+	In my opinion, the best ROI in the Python world would be to implement this for the Django ORM or SQLAlchemy since they seem to be the most widely used.
+ 
 * `Finding Security Bugs in Web Applications using a Catalog of Access Control Patterns`_
 
 * `Derailer Interactive Security Analysis for Web Applications`_
+
+* `Practical Static Analysis of JavaScript Applications in the Presence of Frameworks and Libraries`_
+	There are 3 ways of handling blackbox calls between source and sink, to basically answer the questions a summary does, e.g. if argument A is tainted, does this call return a tainted value? This can be dealth with via (1) hard-coded mapping, (2) pip install, see if Python code or (3) this paper. I suspect long-term, some combination of 1 and 2 will be done with PyT. If we just ask the user, "Hey, does this call propagate taint?" and we remember the answer, it would be easy enough for the user to use the tool.
+
+.. _Schwarzbach static analysis notes: http://lara.epfl.ch/w/_media/sav08:schwartzbach.pdf
+.. _Engineering a Compiler: https://www.amazon.com/Engineering-Compiler-Second-Keith-Cooper/dp/012088478X
+.. _Advanced Compiler Design and Implementation: https://www.amazon.com/Advanced-Compiler-Design-Implementation-Muchnick/dp/1558603204
+.. _Data Flow Analysis Theory and Practice: https://www.amazon.com/Data-Flow-Analysis-Theory-Practice/dp/0849328802
 
 .. _Alias Analysis for Optimization of Dynamic Languages: http://www3.cs.stonybrook.edu/~liu/papers/Alias-DLS10.pdf
 .. _Static Detection of Second Order Vulnerabilities in Web Applications: https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-dahse.pdf
 .. _Finding Security Bugs in Web Applications using a Catalog of Access Control Patterns: https://dspace.mit.edu/openaccess-disseminate/1721.1/102281
 .. _Derailer Interactive Security Analysis for Web Applications: http://people.eecs.berkeley.edu/~jnear/papers/ase14.pdf
-
+.. _Practical Static Analysis of JavaScript Applications in the Presence of Frameworks and Libraries: https://www.doc.ic.ac.uk/~livshits/papers/tr/jscap_tr.pdf
