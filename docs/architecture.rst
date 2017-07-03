@@ -16,10 +16,16 @@ I'll go through each of these steps in depth and walk through where in the code 
 Source code to AST
 ---------------------------
 
-This is by far the easiest step, as it is done for us by the `ast`_ module, the only place where we perform parsing is `generate_ast` in the `ast_helper.py` file, where we just write `ast.parse(f.read())` on a file. The result is a tree of objects whose classes all inherit from `ast.AST`.
+This is by far the easiest step, as it is done for us by the `ast`_ module, the only place where we perform parsing is the `generate_ast` function in the `ast_helper\.py`_ file, where we just write
+
+.. code-block:: python
+	ast.parse(f.read())
+
+on a file. The result is a tree of objects whose classes all inherit from `ast.AST`_.
 
 .. _ast: https://docs.python.org/3/library/ast.html
-
+.. _ast_helper\.py: https://github.com/python-security/pyt/blob/master/pyt/ast_helper.py
+.. ast\.AST: https://docs.python.org/3/library/ast.html#ast.AST
 
 AST to CFG
 ---------------------------
