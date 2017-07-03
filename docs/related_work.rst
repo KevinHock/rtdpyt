@@ -1,5 +1,8 @@
+Related Work
+=============================
+
 Related Projects
-==========================================
+---------------------------
 
 * `Bandit`_
 	Bandit was a tool made by a `few people at OpenStack`_ with the same purpose of PyT in mind, the main difference is that Bandit doesn't track the flow of data and PyT does, so it's closer to a grep ish pre-commit hook to e.g. ban urllib2 and open etc. and suggest Advocate and a secure open wrapper instead. The sinks, formatters and UI are where it shines.
@@ -63,7 +66,7 @@ Related Projects
 
 
 Related Papers
-==========================================
+---------------------------
 
 * `Alias Analysis for Optimization of Dynamic Languages`_
 
