@@ -17,8 +17,8 @@ Contributing to development
 ---------------------------
 
 If you want to deep dive and help out with development on PyT, then
-first get the project installed locally according to the
-:ref:`Installation Guide <installing-pyt>`. After that is done we
+first set up a development environement according to the
+:ref:`virtual env setup guide <install>`. After that is done we
 suggest you have a look at tickets in our issue tracker that are labelled `Easy`_.
 These are meant to be a great way to get a smooth start and
 won't put you in front of the most complex parts of the system.
@@ -26,7 +26,7 @@ won't put you in front of the most complex parts of the system.
 Procedure for adding new features:
 
 * Pitch idea in slack
-* Issue created in Github
+* Create issue in Github
 * Develop the feature in a separate feature-branch
   * Feature branch names should start with the issues number and is allowed to contain letters and underscores, for instance: 12_add_new_awesome_feature
   * Remember to write unit tests and docstrings for your code, and if necessary documentation
