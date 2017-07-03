@@ -83,7 +83,7 @@ Related Papers
 * `Derailer Interactive Security Analysis for Web Applications`_
 
 * `Practical Static Analysis of JavaScript Applications in the Presence of Frameworks and Libraries`_
-	There are 3 ways of handling blackbox calls between source and sink, to basically answer the questions that a proper summary does, e.g. if argument A is tainted, does this call return a tainted value? This can be dealth with via (1) hard-coded mapping, (2) pip install, see if Python code or, (3) possibly this paper. I suspect long-term, some combination of 1 and 2 will be done with PyT. If we just ask the user, "Hey, does this call propagate taint?" and we remember the answer, it would be easy enough for the user to use the tool.
+	There might be 3 ways of handling blackbox calls between source and sink, to basically answer the questions that a proper summary does, e.g. if argument A is tainted, does this call return a tainted value? This can be dealth with via (1) hard-coded mapping, (2) pip install, see if Python code or, (3) possibly this paper. I suspect long-term, some combination of 1 and 2 will be done with PyT. If we just ask the user, "Hey, does this call propagate taint?" and we remember the answer, it would be easy enough for the user to use the tool.
 
 .. _Schwarzbach static analysis notes: http://lara.epfl.ch/w/_media/sav08:schwartzbach.pdf
 .. _Engineering a Compiler: https://www.amazon.com/Engineering-Compiler-Second-Keith-Cooper/dp/012088478X

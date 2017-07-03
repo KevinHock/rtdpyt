@@ -25,7 +25,7 @@ on a file. The result is a tree of objects whose classes all inherit from `ast\.
 
 .. _ast: https://docs.python.org/3/library/ast.html
 .. _ast_helper\.py: https://github.com/python-security/pyt/blob/master/pyt/ast_helper.py
-.. ast\.AST: https://docs.python.org/3/library/ast.html#ast.AST
+.. _ast\.AST: https://docs.python.org/3/library/ast.html#ast.AST
 
 AST to CFG
 ---------------------------
