@@ -3,7 +3,7 @@
 {% set active_forum_nav=True %}
 
 {% block css %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-markdown.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-markdown.min.css') }}"/>
 {% endblock %}
 
 {% block content %}
@@ -31,7 +31,7 @@
                     <div class="pull-left">
                         {% if user.avatar %}
                         <div class="author-box">
-                            <div class="author-avatar hidden-xs"><img src="{{ user.avatar }}" alt="avatar"></div>
+                            <div class="author-avatar hidden-xs"><img src="{{ user.avatar }}" alt="avatar"/></div>
                         </div>
                         {% endif %}
 

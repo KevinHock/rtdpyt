@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="FlaskBB is a forum software written in Flask">
-        <meta name="author" content="FlaskBB Team">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="FlaskBB is a forum software written in Flask"/>
+        <meta name="author" content="FlaskBB Team"/>
+        <meta name="csrf-token" content="{{ csrf_token() }}"/>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
 
         <title>
         {% block title %}
@@ -21,9 +21,9 @@
 
         {% block stylesheets %}
         <!-- syntax highlighting -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/pygments.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pygments.css') }}"/>
         <!-- bootstrap & aurora theme -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
         {% endblock %}
 
         {# for extra stylesheets. e.q. a template has to add something #}
