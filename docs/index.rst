@@ -37,6 +37,7 @@ The main documentation for the tool is organized into a few sections:
    contribute
    team
    related_work
+   past_evaluations
 
 .. _dev-docs:
 
