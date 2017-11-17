@@ -5,12 +5,11 @@ Past Evaluations
 November 16-17th, 2017
 --------------------------------------
 
-So Bruno had made a `large CSV file`_ of open-source Flask repositories, 547 unique ones to be exact, 66 had problems downloading (maybe removed between now and then) so I cloned 481 unique open-source repos. [#]_
+So back in the day `Bruno`_ had made a `large CSV file`_ of open-source Flask repositories, 547 unique ones to be exact, 66 had problems downloading (maybe removed between now and then) so I cloned 481 unique open-source repos. [#]_
 
 I decided, to stay focused during the hackathon, and complete my goal in time, that I would only look for open-redirects. The reason I chose open-redirects as my one bug class is because in my experience, there are less secondary nodes involved. e.g.
 
 .. code-block:: python
-	:caption: Code written by the creator of Flask.
 
 		@app.route('/login/authorized')
 		@facebook.authorized_handler
@@ -28,9 +27,9 @@ In order to evaluate the tool, I needed to know which repositories actually had 
 
 This narrowed it down to 20 repositories, around ~4.1 percent. 17 repos matched the first regex, and 3 matched the second. [#]_
 
-The great: 4 true positives were reported, although 3 of them are in ``@twitter.authorized_handler`` or ``@facebook.authorized_handler`` controllers (used in OAuth.) The most notable one is noted first, as it is in code written by the creator of Flask.
+The great: 4 true positives were reported, although 3 of them are in ``@twitter.authorized_handler`` or ``@facebook.authorized_handler`` controllers (used in OAuth.) The only notable one is noted first, as it is in code written by the creator of Flask.
 
-	* `mitsuhiko/flask-pastebin`_ 5 vulns reported, 1, 2, 3: really false: reported as unknown (Due to us not checking the mapping for ``url_for``) 4,5: true: true
+	* `mitsuhiko/flask-pastebin`_ 5 vulns reported, 1, 2, 3: really false: reported as unknown (GitHub issues incoming, but partially due to us `not checking the "Does this return a tainted value with tainted args?" mapping`_ for ``url_for``) 4,5: true: true
 	* `ashleymcnamara/social_project_flask`_ 2 vulns: really true, reported as true
 	* `fubuki/python-bookmark-service`_ 1 vuln: really true, reported as true
 	* `GandalfTheGandalf/twitter`_ 2 vulns: really true, reported as true
@@ -49,7 +48,7 @@ The bad: 4 had no real vulnerabilities, but had one or two false positives.
 
 	* `billyfung/flask_shortener`_ 2 false positives (Lazy mistake of making ``.get`` a source instead of ``request.args.get`` etc., so ``redis.get`` was used as a source.)
 
-	* `ZAGJAB/Flask_OAuth2`_ 1 false positive (Customization is needed for open-redirects, to elimate all false-positives, because if something tainted is used in string formatting, it typically needs to be at the very beginning of the string to be an open-redirect vulnerability.)
+	* `ZAGJAB/Flask_OAuth2`_ 1 false positive (Customization is needed for open-redirects, to elimate all false-positives, because if something tainted is used in string formatting, it typically needs to be at the very beginning of the string to be a vulnerability.)
 
 	* `amehta/Flaskly`_ 1 false positive (GitHub issue incoming.)
 
@@ -79,7 +78,9 @@ I think the sample size was too small.
 
 .. [#] This isn't exactly true, if something matched the 2nd regex I removed ``".*redirect\(request\.url\).*"`` and ``".*redirect\(request\.referrer\).*"``.
 
+.. _Bruno: https://github.com/Thalmann
 .. _large CSV file: https://github.com/python-security/pyt/blob/master/flask_open_source_apps.csv
+.. _not checking the "Does this return a tainted value with tainted args?" mapping: https://github.com/python-security/pyt/blob/master/pyt/base_cfg.py#L829
 .. _original thesis: http://projekter.aau.dk/projekter/files/239563289/final.pdf#page=83
 .. _source list: https://github.com/python-security/pyt/blob/master/pyt/trigger_definitions/flask_trigger_words.pyt#L4-L5
 .. _sink list: https://github.com/python-security/pyt/blob/master/pyt/trigger_definitions/flask_trigger_words.pyt#L20
@@ -98,7 +99,7 @@ I think the sample size was too small.
 .. _ciaron/pandaflask_old: https://github.com/ciaron/pandaflask_old/blob/master/pandachrome.py
 
 .. _billyfung/flask_shortener: https://github.com/billyfung/flask_shortener/blob/master/app.py#L56
-.. _ZAGJAB/Flask_OAuth2: https://github.com/ZAGJAB/Flask_OAuth2/blob/master/app.py#L77
+.. _ZAGJAB/Flask_OAuth2: https://github.com/ZAGJAB/Flask_OAuth2/blob/master/app.py#L75-L77
 .. _amehta/Flaskly: https://github.com/amehta/Flaskly/blob/master/flaskly.py#L65
 .. _mskog/cheapskate: https://github.com/mskog/cheapskate/blob/master/cheapskate.py#L55
 
