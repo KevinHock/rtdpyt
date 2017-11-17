@@ -48,7 +48,7 @@ The bad: 4 had no real vulnerabilities, but had one or two false positives.
 
 	* `billyfung/flask_shortener`_ 2 false positives (Lazy mistake of making ``.get`` a source instead of ``request.args.get`` etc., so ``redis.get`` was used as a source.)
 
-	* `ZAGJAB/Flask_OAuth2`_ 1 false positive (Customization is needed for open-redirects, to elimate all false-positives, because if something tainted is used in string formatting, it typically needs to be at the very beginning of the string to be a vulnerability.)
+	* `ZAGJAB/Flask_OAuth2`_ 1 false positive (Customization is needed for open-redirects, to eliminate all false-positives, because if something tainted is used in string formatting, it typically needs to be at the very beginning of the string to be a vulnerability.)
 
 	* `amehta/Flaskly`_ 1 false positive (GitHub issue incoming.)
 
