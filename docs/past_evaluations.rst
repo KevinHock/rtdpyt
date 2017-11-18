@@ -23,7 +23,7 @@ I decided, to stay focused during the hackathon, and complete my goal in time, t
 By 'secondary nodes', I mean the arg typically is retrieved and then placed in ``redirect()``, it isn't passed into another function, or used in an assignment somewhere else. This makes them somewhat easier to find statically, as there are less things that can go wrong.
 
 
-In order to evaluate the tool, I needed to know which repositories actually had vulnerabilities in them, so I put my junk hacking skills to work and made 2 regular expressions. ``".*redirect\([a-zA-Z0-9_]+\).*"`` and ``".*redirect\(request.*\).*"``. The first one detects any redirect call with a variable as the only argument, and the second detects any redirect call with request.anything as the first argument. These aren't perfect, but have a good chance of detecting 90 something percent of possibly vulnerable calls. (The CSV file somehow had a controller file associated with each repo, and each regex was run on every line.)
+In order to evaluate the tool, I needed to know which repositories actually had vulnerabilities in them, so I put my `junk hacking`_ skills to work and made 2 regular expressions. ``".*redirect\([a-zA-Z0-9_]+\).*"`` and ``".*redirect\(request.*\).*"``. The first one detects any redirect call with a variable as the only argument, and the second detects any redirect call with request.anything as the first argument. These aren't perfect, but have a good chance of detecting 90 something percent of possibly vulnerable calls. (The CSV file somehow had a controller file associated with each repo, and each regex was run on every line.)
 
 This narrowed it down to 20 repositories, around ~4.1 percent. 17 repos matched the first regex, and 3 matched the second. [#]_
 
@@ -59,7 +59,7 @@ The ugly: 2 had one false-negative.
 	* `oakie/oauth-flask-template`_ (GitHub issue incoming.)
 	* `cyberved/simple-web-proxy`_ (GitHub issue incoming.)
 
-The fatal: 3 crashed PyT, but by sheer luck, didn't have any open-redirect vulnerabilities in them, I looked.
+The fatal: 3 crashed PyT, but by sheer luck, didn't have any open-redirect vulnerabilities in them, I looked. 2 or 3 of them were in a `PR`_ I merged last weekend, so there's that.
 
 	* `commandknight/cs125-fooddy-flask`_ (GitHub issue incoming.)
 	* `bear/python-indieweb`_ (GitHub issue incoming.)
@@ -80,6 +80,7 @@ I think the sample size was too small.
 
 .. _Bruno: https://github.com/Thalmann
 .. _large CSV file: https://github.com/python-security/pyt/blob/master/flask_open_source_apps.csv
+.. _junk hacking: https://lists.immunityinc.com/pipermail/dailydave/2014-September/000746.html
 .. _not checking the "Does this return a tainted value with tainted args?" mapping: https://github.com/python-security/pyt/blob/master/pyt/base_cfg.py#L829
 .. _original thesis: http://projekter.aau.dk/projekter/files/239563289/final.pdf#page=83
 .. _source list: https://github.com/python-security/pyt/blob/master/pyt/trigger_definitions/flask_trigger_words.pyt#L4-L5
@@ -106,6 +107,7 @@ I think the sample size was too small.
 .. _oakie/oauth-flask-template: https://github.com/oakie/oauth-flask-template/blob/master/auth.py#L63
 .. _cyberved/simple-web-proxy: https://github.com/cyberved/simple-web-proxy/blob/master/app.py#L73
 
+.. _PR: https://github.com/python-security/pyt/pull/63
 .. _commandknight/cs125-fooddy-flask: https://github.com/commandknight/cs125-fooddy-flask/blob/master/fooddy2.py
 .. _bear/python-indieweb: https://github.com/bear/python-indieweb/blob/master/indieweb.py
 .. _ubbochum/hb2_flask: https://github.com/ubbochum/hb2_flask/blob/master/hb2_flask.py
