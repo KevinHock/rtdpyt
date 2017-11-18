@@ -7,7 +7,7 @@ November 16-17th, 2017
 
 So back in the day `Bruno`_ had made a `large CSV file`_ of open-source Flask repositories, 547 unique ones to be exact, 66 had problems downloading (maybe removed between now and then) so I cloned 481 unique open-source repos. [#]_
 
-I decided, to stay focused during the hackathon, and complete my goal in time, that I would only look for open-redirects. Open-redirects are when you can send somebody a link like `https://chase.com?next=http://evil.com` or `https://chase.com?next=%68%74%74%70%73%3a%2f%2f%77%77%77%2e%65%76%69%6c%2e%63%6f%6d` and evil.com has a phishing page on it. The reason I chose open-redirects as my one bug class is because in my experience, there are less secondary nodes involved. e.g.
+I decided, to stay focused during the hackathon, and complete my goal in time, that I would only look for open-redirects. Open-redirects are when you can send somebody a link like ``https://chase.com?next=http://evil.com`` or ``https://chase.com?next=%68%74%74%70%73%3a%2f%2f%77%77%77%2e%65%76%69%6c%2e%63%6f%6d`` and evil.com has a phishing page on it. The reason I chose open-redirects as my one bug class is because in my experience, there are less secondary nodes involved. e.g.
 
 .. code-block:: python
 
