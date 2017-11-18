@@ -59,7 +59,7 @@ The ugly: 2 had one false-negative.
 	* `oakie/oauth-flask-template`_ (GitHub issue incoming.)
 	* `cyberved/simple-web-proxy`_ (GitHub issue incoming.)
 
-The fatal: 3 crashed PyT, but by sheer luck, didn't have any open-redirect vulnerabilities in them, I looked. 2 or 3 of them were in a `PR`_ I merged last weekend, so there's that.
+The fatal: 3 crashed PyT, but by sheer luck, didn't have any open-redirect vulnerabilities in them, I looked. 2 or 3 of them were caused by a `PR`_ I merged last weekend.
 
 	* `commandknight/cs125-fooddy-flask`_ (GitHub issue incoming.)
 	* `bear/python-indieweb`_ (GitHub issue incoming.)
